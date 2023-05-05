@@ -74,8 +74,7 @@ public class AircraftWar extends View
     {
         super.onDraw(canvas);
 
-        String tmp = String.format("A_step: %d, B_step: %d, sh: %d", A_step, B_step, sh);
-        // Log.i(TAG, tmp);
+        // Log.i(TAG, String.format("A_step: %d, B_step: %d, sh: %d", A_step, B_step, sh));
 
         // 绘制背景
         DrawBackGround(canvas);
@@ -158,6 +157,7 @@ public class AircraftWar extends View
         canvas.drawBitmap(bitmap, x, y, paint);
     }
 
+    // 背景音乐
     private void PlayMusic(Context ctx)
     {
         MediaPlayer mediaPlayer = MediaPlayer.create(ctx, R.raw.bg_music);
